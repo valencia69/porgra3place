@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'description_place.dart';
+import 'home_app_bar.dart';
 
 class MyHome extends StatelessWidget{
   @override
@@ -8,7 +9,7 @@ class MyHome extends StatelessWidget{
 
     final descriptionplace = Container(
       margin: EdgeInsets.only(
-          top: 250,
+          top: 300,
           left: 30,
           right: 30
 
@@ -36,7 +37,8 @@ class MyHome extends StatelessWidget{
     return Scaffold(
       body: Stack(
         children: <Widget>[
-          CardImage("assets/images/L1.jpeg")
+          listView,
+          HomeAppBar("popular")
         ],
       ),
     );
