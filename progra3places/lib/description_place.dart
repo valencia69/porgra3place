@@ -79,9 +79,11 @@ class DescriptionPlace extends StatelessWidget{
 
 
     final descriptionPlace = Column(
+      crossAxisAlignment= CrossAxisAlignment.start.
         children: <Widget>[
         filatitulo,
           descripcion
+          RoundedButton("navigate")
     ],
     );
     return   descriptionPlace
