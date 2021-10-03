@@ -37,6 +37,13 @@ class cardImagen extends StatelesWidget {
       ),
     );
 
+    final cardImage = Stack(
+      alignment: Alignment(0.7, 0.95),
+      children: <Widget>[
+        card,
+        FabGreen()
+      ],
+    );
 
     return cardImagen;
   }
